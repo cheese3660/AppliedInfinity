@@ -58,26 +58,26 @@ public class FluidDisk extends Item {
             return null;
         }
     }
-    @Override
-    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
-        if (hasGuid(itemStack)) {
-            var storage = getStorage(itemStack);
-            if (size == 0 || Screen.hasShiftDown()) {
-                var usage = storage.getUsage();
-                var buckets = usage/1000;
-                var mB = usage % 1000;
-                components.add(Component.literal(String.format("Usage: %d.%03d buckets",buckets,mB)));
-            } else {
-                components.add(Component.literal(String.format("Usage: %01.2f %%",(storage.getUsage() * 100d / (double)storage.getSize()))));
-            }
-        }
-        if (Screen.hasShiftDown()) {
-            if (hasGuid(itemStack)) {
-                components.add(Component.literal(String.format("GUID: %s", getGuid(itemStack))));
-            } else {
-                components.add(Component.literal("No GUID set yet."));
-            }
-        }
-        super.appendHoverText(itemStack, level, components, tooltipFlag);
-    }
+//    @Override
+//    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
+//        if (hasGuid(itemStack)) {
+//            var storage = getStorage(itemStack);
+//            if (size == 0 || Screen.hasShiftDown()) {
+//                var usage = storage.getUsage();
+//                var buckets = usage/1000;
+//                var mB = usage % 1000;
+//                components.add(Component.literal(String.format("Usage: %d.%03d buckets",buckets,mB)));
+//            } else {
+//                components.add(Component.literal(String.format("Usage: %01.2f %%",(storage.getUsage() * 100d / (double)storage.getSize()))));
+//            }
+//        }
+//        if (Screen.hasShiftDown()) {
+//            if (hasGuid(itemStack)) {
+//                components.add(Component.literal(String.format("GUID: %s", getGuid(itemStack))));
+//            } else {
+//                components.add(Component.literal("No GUID set yet."));
+//            }
+//        }
+//        super.appendHoverText(itemStack, level, components, tooltipFlag);
+//    }
 }

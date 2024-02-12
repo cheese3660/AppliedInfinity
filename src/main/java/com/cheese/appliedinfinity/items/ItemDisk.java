@@ -58,23 +58,23 @@ public class ItemDisk extends Item {
         }
     }
 
-    @Override
-    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
-        if (hasGuid(itemStack)) {
-            var storage = getStorage(itemStack);
-            if (size == 0 || Screen.hasShiftDown()) {
-                components.add(Component.literal(String.format("Usage: %d items",storage.getUsage())));
-            } else {
-                components.add(Component.literal(String.format("Usage: %01.2f %%",(storage.getUsage() * 100d / (double)storage.getSize()))));
-            }
-        }
-        if (Screen.hasShiftDown()) {
-            if (hasGuid(itemStack)) {
-                components.add(Component.literal(String.format("GUID: %s", getGuid(itemStack))));
-            } else {
-                components.add(Component.literal("No GUID set yet."));
-            }
-        }
-        super.appendHoverText(itemStack, level, components, tooltipFlag);
-    }
+//    @Override
+//    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
+//        if (hasGuid(itemStack)) {
+//            var storage = getStorage(itemStack);
+//            if (size == 0 || Screen.hasShiftDown()) {
+//                components.add(Component.literal(String.format("Usage: %d items",storage.getUsage())));
+//            } else {
+//                components.add(Component.literal(String.format("Usage: %01.2f %%",(storage.getUsage() * 100d / (double)storage.getSize()))));
+//            }
+//        }
+//        if (Screen.hasShiftDown()) {
+//            if (hasGuid(itemStack)) {
+//                components.add(Component.literal(String.format("GUID: %s", getGuid(itemStack))));
+//            } else {
+//                components.add(Component.literal("No GUID set yet."));
+//            }
+//        }
+//        super.appendHoverText(itemStack, level, components, tooltipFlag);
+//    }
 }
