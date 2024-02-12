@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "appliedinfinity:item/fluid_disks/fluid_disk_512m"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QRQ",
+    "RPR",
+    "III"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "Q": {
+      "item": "ae2:quartz_glass"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "appliedinfinity:storage_part_512k"
+    }
+  },
+  "result": {
+    "item": "appliedinfinity:disk_512k",
+    "count": 1
+  }
+}

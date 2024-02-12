@@ -1,0 +1,18 @@
+{
+  "type": "ae2:inscriber",
+  "ingredients": {
+    "bottom": {
+      "item": "appliedinfinity:quantum_engineering_processor"
+    },
+    "middle": {
+      "item": "appliedinfinity:quantum_calculation_processor"
+    },
+    "top": {
+      "item": "appliedinfinity:quantum_logic_processor"
+    }
+  },
+  "mode": "press",
+  "result": {
+    "item": "appliedinfinity:quantum_computer"
+  }
+}

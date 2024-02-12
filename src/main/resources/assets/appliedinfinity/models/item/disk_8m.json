@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "appliedinfinity:item/disks/disk_8m"
+  }
+}

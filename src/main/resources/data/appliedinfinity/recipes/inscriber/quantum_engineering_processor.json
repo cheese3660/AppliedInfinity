@@ -1,0 +1,18 @@
+{
+  "type": "ae2:inscriber",
+  "ingredients": {
+    "bottom": {
+      "item": "minecraft:nether_star"
+    },
+    "middle": {
+      "item": "ae2:engineering_processor"
+    },
+    "top": {
+      "item": "ae2:singularity"
+    }
+  },
+  "mode": "press",
+  "result": {
+    "item": "appliedinfinity:quantum_engineering_processor"
+  }
+}

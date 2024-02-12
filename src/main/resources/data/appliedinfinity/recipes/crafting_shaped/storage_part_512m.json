@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FCF",
+    "PQP",
+    "FPF"
+  ],
+  "key": {
+    "F": {
+      "item": "ae2:fluix_dust"
+    },
+    "C": {
+      "item": "appliedinfinity:quantum_calculation_processor"
+    },
+    "P": {
+      "item": "appliedinfinity:storage_part_128m"
+    },
+    "Q": {
+      "item": "ae2:quartz_glass"
+    }
+  },
+  "result": {
+    "item": "appliedinfinity:storage_part_512m",
+    "count": 1
+  }
+}

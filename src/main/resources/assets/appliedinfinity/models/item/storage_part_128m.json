@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "appliedinfinity:item/storage_parts/storage_part_128m"
+  }
+}
